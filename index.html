@@ -11,11 +11,12 @@
 </head>
 
 <body id="t" class="offline">
-    <div id="messageBox" class="sendmessage">
+    <div id="messageBox1" class="sendmessage">
          <h1 style="text-align: center;font-family: 'Open Sans', sans-serif;">Press Space to start</h1>
          
          <div class="niokbutton" onclick="okbuttonsend()"></div>
     </div>
+    
     <div id="main-frame-error" class="interstitial-wrapper">
         <div id="main-content">
             <div class="icon icon-offline" alt=""></div>
@@ -30,8 +31,8 @@
             </template>
         </div>
     </div>
-    <div id="messageBox" class="sendmessage">
-        <h2 style="text-align: center;font-family: 'Open Sans', sans-serif;"> 小鸡炖蘑菇^， 玩完了记得写作业儿！</h2>
+    <div id="messageBox2" class="sendmessage">
+        <h1 style="text-align: center;font-family: 'Open Sans', sans-serif;"> 小鸡炖蘑菇^, 晚上早点儿睡觉！</h1>
     </div>
     
 </body>
@@ -40,8 +41,10 @@
     document.onkeydown = function(evt) {
     evt = evt || window.event;
     if (evt.keyCode == 32) {
-        var box = document.getElementById("messageBox");
-        box.style.visibility="hidden";
+        box1 = document.getElementById("messageBox1");
+        box1.style.visibility="hidden";
+        box2 = document.getElementById("messageBox2");
+        box2.style.visibility="hidden";
     }
 };
 </script>
